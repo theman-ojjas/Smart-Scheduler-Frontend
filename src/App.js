@@ -38,9 +38,10 @@ function App() {
 
       // Post request
        const res = await axios.post(
-        "https://smart-scheduler-backend.onrender.com/api/v1/projects/1/schedule",
+        "https://smart-scheduler-backend-upgr.onrender.com/api/v1/projects/1/schedule",
         { tasks: formattedTasks, workHoursPerDay }
       );
+      
 
       setResult(res.data);
     } catch (err) {
